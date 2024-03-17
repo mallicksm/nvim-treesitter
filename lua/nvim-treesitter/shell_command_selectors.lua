@@ -111,6 +111,7 @@ function M.select_compiler_args(repo, compiler)
       "-I./src",
       repo.files,
       "-Os",
+      "-std=c99",
     }
     if fn.has "mac" == 1 then
       table.insert(args, "-bundle")
