@@ -110,7 +110,6 @@ function M.select_compiler_args(repo, compiler)
       "parser.so",
       "-I./src",
       repo.files,
-      "-shared",
       "-Os",
       "-std=c99",
     }
