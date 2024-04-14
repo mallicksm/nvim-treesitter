@@ -112,7 +112,6 @@ function M.select_compiler_args(repo, compiler)
       repo.files,
       "-shared",
       "-Os",
-      "-lstdc++",
       "-std=c99",
     }
     if fn.has "mac" == 1 then
